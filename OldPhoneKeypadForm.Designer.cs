@@ -53,7 +53,7 @@ namespace OldPhoneKeypad
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(60, 60);
             this.btn_1.TabIndex = 0;
-            this.btn_1.Text = "Clear All";
+            this.btn_1.Text = "1\r\n\r\nClear All\r\n";
             this.btn_1.UseVisualStyleBackColor = true;
             this.btn_1.Click += new System.EventHandler(this.Btn_1_Click);
             // 
@@ -133,7 +133,7 @@ namespace OldPhoneKeypad
             this.btn_hash.Name = "btn_hash";
             this.btn_hash.Size = new System.Drawing.Size(60, 60);
             this.btn_hash.TabIndex = 5;
-            this.btn_hash.Text = "#\r\n\r\nsend";
+            this.btn_hash.Text = "send";
             this.btn_hash.UseVisualStyleBackColor = true;
             this.btn_hash.Click += new System.EventHandler(this.Btn_hash_Click);
             // 
