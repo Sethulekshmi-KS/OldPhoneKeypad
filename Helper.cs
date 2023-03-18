@@ -14,7 +14,7 @@ namespace OldPhoneKeypad
         int Counter = 0;
         char PreviousChar = ' ';
         string FinalString = "";
-        
+
         /// <summary>
         /// This method loops through each character in the input string
         /// and returns respective alphabets
@@ -56,12 +56,13 @@ namespace OldPhoneKeypad
                     case '*':
                         if (!string.IsNullOrEmpty(FinalString))
                             FinalString = FinalString.Remove(FinalString.Length - 1, 1);
+                        ResetPreviousChar();
                         break;
                     case '0':
                         GetAlphabet(c, 8);
                         break;
                     case ' ':
-                        PreviousChar = ' ';
+                        ResetPreviousChar();
                         break;
                     default:
                         break;
@@ -96,6 +97,11 @@ namespace OldPhoneKeypad
                 FinalString += Button[Counter].ToString();
             }
             PreviousChar = c;
+        }
+
+        public void ResetPreviousChar()
+        {
+            PreviousChar = ' ';
         }
     }
 }
