@@ -19,4 +19,7 @@ Working:
  -> A pause of 1 sec is added in order to type two characters from the same button(the pause is represented by a space in the input string. it will not be reflected in the final output)
  -> After entering the desired input, click on button '#' or 'send' to display the final output in the textbox
  -> Make sure to clear the current result using button 1 before starting with new input
+ 
+ Note:
+ Unit test report is added in the project inside folder 'Unit Test'. All the test cases written in the report are tested and found as working.
   
